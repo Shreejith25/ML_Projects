@@ -140,10 +140,7 @@ In the modern HR landscape, it's essential to identify employees who have the po
 ---
 
 
-   ```
-
-   The application will start running on `http://localhost:9000`. You can access it through your web browser.
-
+  
 ---
 
 ## Web Application<a name="web-application"></a>
