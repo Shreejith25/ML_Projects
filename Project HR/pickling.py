@@ -95,15 +95,15 @@ from xgboost import XGBClassifier
 
 # Create an XGBoost classifier with specified parameters
 
-model = XGBClassifier(booster='gbtree',
-                    eval_metric='auc',
-                    learning_rate=0.2,
-                    max_depth=270,
-                    min_child_weight=3,
-                    n_estimators=1127,
-                    objective='binary:logistic',
-                    scale_pos_weight=2,
-                    tree_method='auto')
+model = XGBClassifier(booster= 'gbtree',
+                        eval_metric= 'error',
+                        learning_rate= 0.3,
+                        max_depth= 280,
+                        min_child_weight= 1,
+                        n_estimators= 1000,
+                        objective = 'binary:logistic',
+                        scale_pos_weight= 1,
+                        tree_method = 'approx')
 
 # Fit the model to your training data
 model.fit(x_train_sm.values, y_train_sm.values)
